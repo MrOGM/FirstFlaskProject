@@ -10,7 +10,7 @@ from tabulate import tabulate
 @app.route("/")
 def index():
     # se agrega URL del archivo json que posea la info que queramos
-    databaseURL ="https://proyecto-prueb-944a0-default-rtdb.firebaseio.com/HumSensor.json"
+    databaseURL ="XXXXX"
     
     # se decodifica y obtiene la informacion del url suministrado
     respuesta = requests.get(databaseURL).content.decode("utf-8")
@@ -21,7 +21,7 @@ def index():
 
 @app.route("/index2")
 def index2():
-    databaseURL = "https://proyecto-prueb-944a0-default-rtdb.firebaseio.com/TempsRandom.json"
+    databaseURL = "XXXXXX"
     respuesta = requests.get(databaseURL).json()
     # Convert the JSON data into a list of dictionaries
     data = []
@@ -34,8 +34,8 @@ def index2():
 
 @app.route("/index3")
 def index3():
-    databaseURL ="https://proyecto-prueb-944a0-default-rtdb.firebaseio.com/TempsSensor.json"
-    databaseURL2 ="https://proyecto-prueb-944a0-default-rtdb.firebaseio.com/TempsRandom.json"
+    databaseURL ="XXXXX"
+    databaseURL2 ="XXXXXXXXXXXX"
 
     respuesta = requests.get(databaseURL)
     respuesta = respuesta.json()
